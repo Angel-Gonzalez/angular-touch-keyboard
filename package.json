@@ -45,6 +45,6 @@
     "typescript": "~5.4.5"
   },
   "publishConfig": {
-    "registry": "https://git.nscontrol.es/api/v4/projects/189/packages/npm/"
+    "@control-presencial:registry": "https://git.nscontrol.es/api/v4/projects/189/packages/npm/"
   }
 }
