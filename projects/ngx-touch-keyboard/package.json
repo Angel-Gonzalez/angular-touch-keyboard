@@ -1,5 +1,5 @@
 {
-  "name": "ngx-touch-keyboard",
+  "name": "@control-presencial/ngx-touch-keyboard",
   "version": "4.0.0",
   "description": "Virtual Keyboard for Angular applications",
   "peerDependencies": {
@@ -20,16 +20,19 @@
     "onscreen"
   ],
   "author": {
-    "name": "Mohsen Sohrabi",
-    "url": "https://github.com/mohsen77sk"
+    "name": "Ángel González",
+    "url": "https://git.nscontrol.es/angel"
   },
-  "homepage": "https://github.com/mohsen77sk/angular-touch-keyboard#readme",
+  "homepage": "https://git.nscontrol.es/control-presencial/fichanet/touch-screen-keyboard/-/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohsen77sk/angular-touch-keyboard.git"
+    "url": "git+https://git.nscontrol.es/control-presencial/fichanet/touch-screen-keyboard.git"
   },
   "bugs": {
-    "url": "https://github.com/mohsen77sk/angular-touch-keyboard/issues"
+    "url": "https://git.nscontrol.es/control-presencial/fichanet/touch-screen-keyboard/-/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "@control-presencial:registry": "https://git.nscontrol.es/api/v4/projects/189/packages/npm/"
+  }
 }

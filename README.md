@@ -8,10 +8,6 @@ Virtual Keyboard for Angular applications.
 
 ![angular touch keyboard](https://mohsen77sk.github.io/angular-touch-keyboard/assets/images/angularTouchKeyboard.png)
 
-## Demo
-
-[https://mohsen77sk.github.io/angular-touch-keyboard/](https://mohsen77sk.github.io/angular-touch-keyboard/)
-
 ## Install
 
 ### Step 1: Install [ngx-touch-keyboard](https://www.npmjs.com/package/ngx-touch-keyboard)
@@ -53,7 +49,8 @@ export class AppModule { }
 
 AngularTouchKeyboard is localized in 5 keyboard-specific locales:
 
-* `en-US` English (United States) (default)
+* `es-ES` English (United States) (default)
+* `en-US` English (United States)
 * `en-UK` English (United Kingdom)
 * `fa-IR` Persian (Iran)
 * `sv-SE` Swedish (Sweden)
