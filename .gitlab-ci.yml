@@ -27,6 +27,7 @@ publish:
       changes:
         - package.json
   script:
+    - cd dist/ngx-touch-keyboard
     # If no .npmrc is included in the repo, generate a temporary one that is configured to publish to GitLab's NPM registry
     - |
       if [[ ! -f .npmrc ]]; then
@@ -55,7 +56,6 @@ publish:
     # If the package.json version has not yet been published, run `npm publish`.
     # If $SIGSTORE_ID_TOKEN is set this template will generate a provenance
     # document. For more information refer to the documentation: https://docs.gitlab.com/ee/ci/yaml/signing_examples/
-    - cd dist/ngx-touch-keyboard
     - |
       if [[ "$(npm view ${NPM_PACKAGE_NAME} versions)" != *"'${NPM_PACKAGE_VERSION}'"* ]]; then
         if [[ -n "${SIGSTORE_ID_TOKEN}" ]]; then
