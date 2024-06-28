@@ -28,7 +28,7 @@ const layouts: Layout = {
   ],
   search_alphabetic: [
     ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
-    ['a', 's', 'd', 'f', 'g', 'h', 'J', 'K', 'L', 'Ñ'],
+    ['a', 's', 'd', 'f', 'g', 'h', 'J', 'k', 'l', 'ñ'],
     ['{shift}', 'z', 'x', 'c', 'v', 'b', 'n', 'm', '{backspace}'],
     ['{numeric}', '{space}', '{done}'],
   ],
@@ -52,7 +52,7 @@ const layouts: Layout = {
   ],
   email_alphabetic: [
     ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
-    ['a', 's', 'd', 'f', 'g', 'h', 'J', 'K', 'L', 'Ñ'],
+    ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'ñ'],
     ['{shift}', 'z', 'x', 'c', 'v', 'b', 'n', 'm', '{backspace}'],
     ['{numeric}', '@', '{space}', '.', '{done}'],
   ],
@@ -76,7 +76,7 @@ const layouts: Layout = {
   ],
   url_alphabetic: [
     ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
-    ['a', 's', 'd', 'f', 'g', 'h', 'J', 'K', 'L', 'Ñ'],
+    ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'ñ'],
     ['{shift}', 'z', 'x', 'c', 'v', 'b', 'n', 'm', '{backspace}'],
     ['{numeric}', '/', '.com', '.', '{done}'],
   ],
