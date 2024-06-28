@@ -33,6 +33,6 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "@control-presencial:registry": "https://git.nscontrol.es/api/v4/projects/189/packages/npm/"
+    "registry": "https://git.nscontrol.es/api/v4/projects/189/packages/npm/"
   }
 }
