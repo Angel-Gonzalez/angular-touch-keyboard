@@ -1,21 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {NgxTouchKeyboardModule} from 'ngx-touch-keyboard';
+import {AppComponent} from './app.component';
+import {MaterialDialogExampleComponent} from './material-dialog-example/material-dialog-example.component';
+import {registerLocaleData} from "@angular/common";
+import localeEs from '@angular/common/locales/es';
 
-import { NgxTouchKeyboardModule } from 'ngx-touch-keyboard';
-
-import { AppComponent } from './app.component';
-import { MaterialDialogExampleComponent } from './material-dialog-example/material-dialog-example.component';
+registerLocaleData(localeEs, 'es-ES');
 
 @NgModule({
   declarations: [AppComponent, MaterialDialogExampleComponent],

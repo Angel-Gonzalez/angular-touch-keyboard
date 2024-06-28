@@ -1,9 +1,9 @@
-import { Component, Inject, ViewEncapsulation } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
-import { MatDialog } from '@angular/material/dialog';
+import {Component, Inject, ViewEncapsulation} from '@angular/core';
+import {DOCUMENT} from '@angular/common';
+import {MatDialog} from '@angular/material/dialog';
 import packageJson from '../../projects/ngx-touch-keyboard/package.json';
 
-import { MaterialDialogExampleComponent } from './material-dialog-example/material-dialog-example.component';
+import {MaterialDialogExampleComponent} from './material-dialog-example/material-dialog-example.component';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +15,9 @@ export class AppComponent {
   isDark = true;
   version = packageJson.version;
 
-  language = 'en-US';
+  language = 'es-ES';
   languages = [
+    {value: 'es-ES', name: 'Español (ES)'},
     { value: 'en-US', name: 'English (US)' },
     { value: 'en-GB', name: 'English (UK)' },
     { value: 'fa-IR', name: 'Persian' },

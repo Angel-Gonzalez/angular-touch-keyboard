@@ -9,10 +9,10 @@ import {
   Output,
   ViewEncapsulation,
 } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
 
-import { fnButton } from './Locale/constants';
-import { Locale } from './Locale/type';
+import {fnButton} from './Locale/constants';
+import {Locale} from './Locale/type';
 import * as Locales from './Locale';
 
 @Component({
@@ -23,7 +23,7 @@ import * as Locales from './Locale';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NgxTouchKeyboardComponent {
-  locale: Locale = Locales.enUS;
+  locale: Locale = Locales.esES;
   layoutMode = 'text';
   layoutName = 'alphabetic';
   debug = false;
@@ -128,11 +128,11 @@ export class NgxTouchKeyboardComponent {
     value = value.replace('-', '').trim();
     // Set Locale if supported
     if ((Object.keys(Locales) as readonly string[]).includes(value)) {
-      this.locale = Locales[value as 'enUS'];
+      this.locale = Locales[value as 'esES'];
     }
     // Set default Locale if not supported
     else {
-      this.locale = Locales.enUS;
+      this.locale = Locales.esES;
     }
   }
 
