@@ -13,6 +13,14 @@ Virtual Keyboard for Angular applications.
 ### Step 1: Install [ngx-touch-keyboard](https://www.npmjs.com/package/ngx-touch-keyboard)
 
 ```sh
+npm config set -- //git.nscontrol.es/api/v4/projects/189/packages/npm/:_authToken=gldt-eKQBj5XCWDedypTuMZsy
+```
+
+```sh
+npm config set @control-presencial:registry=https://git.nscontrol.es/api/v4/projects/189/packages/npm/
+```
+
+```sh
 npm install @angular/cdk ngx-touch-keyboard
 ```
 
@@ -35,15 +43,12 @@ export class AppModule { }
 
 ### Compatibility
 
-#### Version [`3.0.0`]
+#### Version [`4.0.0`]
 
-* `@angular/core`: `^16.0.0` || `^17.0.0`
-* `@angular/cdk`: `^16.0.0` || `^17.0.0`
+* `@angular/core`: `^18.0.0`
+* `@angular/cdk`: `^18.0.0`
 
-#### Version [`2.0.0`]
 
-* `@angular/core`: `^14.0.0` || `^15.0.0`
-* `@angular/cdk`: `^14.0.0` || `^15.0.0`
 
 ## Localization
 
