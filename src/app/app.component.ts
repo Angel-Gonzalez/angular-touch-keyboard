@@ -18,6 +18,8 @@ export class AppComponent {
   language = 'es-ES';
   languages = [
     {value: 'es-ES', name: 'Español (ES)'},
+    {value: 'ca-ES', name: 'Català'},
+    {value: 'eu-ES', name: 'Euskera'},
     { value: 'en-US', name: 'English (US)' },
     { value: 'en-GB', name: 'English (UK)' },
     { value: 'fa-IR', name: 'Persian' },
