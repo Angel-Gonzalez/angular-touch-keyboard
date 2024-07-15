@@ -75,6 +75,7 @@ export class NgxTouchKeyboardComponent {
   @HostListener('window:keyup', ['$event'])
   handleKeyUp(event: KeyboardEvent): void {
     if (event.isTrusted) {
+      console.log("event in keyup", event);
       this._caretEventHandler(event);
       this._handleHighlightKeyUp(event);
     }
@@ -85,6 +86,7 @@ export class NgxTouchKeyboardComponent {
    */
   @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent): void {
+    console.log("event in keydown", event);
     if (event.isTrusted) {
       this._handleHighlightKeyDown(event);
     }
@@ -95,6 +97,7 @@ export class NgxTouchKeyboardComponent {
    */
   @HostListener('window:pointerup', ['$event'])
   handleMouseUp(event: PointerEvent): void {
+    console.log("event in pointerup", event);
     this._caretEventHandler(event);
   }
 
@@ -103,6 +106,7 @@ export class NgxTouchKeyboardComponent {
    */
   @HostListener('window:select', ['$event'])
   handleSelect(event: Event): void {
+    console.log("event in select", event);
     this._caretEventHandler(event);
   }
 
@@ -111,6 +115,7 @@ export class NgxTouchKeyboardComponent {
    */
   @HostListener('window:selectionchange', ['$event'])
   handleSelectionChange(event: Event): void {
+    console.log("event in selectionchange", event);
     this._caretEventHandler(event);
   }
 

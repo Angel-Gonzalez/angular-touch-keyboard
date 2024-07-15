@@ -18,6 +18,7 @@
           [ngClass]="[getButtonClass(key)]"
           [attr.data-layout]="layoutMode"
           (pointerup)="handleButtonUp(key, $event)"
+          (click)="handleButtonUp(key, $event)"
           (pointerdown)="handleButtonDown(key, $event)"
           (pointercancel)="handleButtonUp(key, $event)"
           [innerHtml]="getButtonDisplayName(key)"
