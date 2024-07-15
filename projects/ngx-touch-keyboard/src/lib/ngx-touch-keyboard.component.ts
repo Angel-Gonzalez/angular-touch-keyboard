@@ -58,6 +58,12 @@ export class NgxTouchKeyboardComponent {
     return this._activeInputElement?.maxLength ?? -1;
   }
 
+  prueba(key: string, event: Event) {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    console.log('key and event', key, event);
+  }
+
   /**
    * Getter for type of input
    */
@@ -378,6 +384,7 @@ export class NgxTouchKeyboardComponent {
    * @param event The button event.
    */
   handleButtonUp(button: string, e?: Event): void {
+    console.log("key and event in handleButtonUp", button, e);
     if (this.debug) {
       console.log('Key up:', button);
     }
