@@ -1,7 +1,9 @@
 {
   "name": "@control-presencial/ngx-touch-keyboard",
-  "version": "4.0.6",
+  "version": "4.0.10",
   "description": "Virtual Keyboard for Angular applications",
+  "scripts": {
+  },
   "peerDependencies": {
     "@angular/cdk": "^18.1.0",
     "@angular/common": "^18.1.0",
