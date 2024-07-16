@@ -58,11 +58,7 @@ export class NgxTouchKeyboardComponent {
     return this._activeInputElement?.maxLength ?? -1;
   }
 
-  prueba(key: string, event: Event) {
-    event.preventDefault();
-    event.stopImmediatePropagation();
-    console.log('key and event', key, event);
-  }
+  
 
   /**
    * Getter for type of input
@@ -75,24 +71,25 @@ export class NgxTouchKeyboardComponent {
   // @ Decorated methods
   // -----------------------------------------------------------------------------------------------------
 
+
   /**
    * On keyup
    */
   @HostListener('window:keyup', ['$event'])
   handleKeyUp(event: KeyboardEvent): void {
     if (event.isTrusted) {
-      console.log("event in keyup", event);
       this._caretEventHandler(event);
       this._handleHighlightKeyUp(event);
     }
   }
+
+ 
 
   /**
    * On keydown
    */
   @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent): void {
-    console.log("event in keydown", event);
     if (event.isTrusted) {
       this._handleHighlightKeyDown(event);
     }
@@ -103,7 +100,6 @@ export class NgxTouchKeyboardComponent {
    */
   @HostListener('window:pointerup', ['$event'])
   handleMouseUp(event: PointerEvent): void {
-    console.log("event in pointerup", event);
     this._caretEventHandler(event);
   }
 
@@ -112,7 +108,6 @@ export class NgxTouchKeyboardComponent {
    */
   @HostListener('window:select', ['$event'])
   handleSelect(event: Event): void {
-    console.log("event in select", event);
     this._caretEventHandler(event);
   }
 
@@ -121,7 +116,6 @@ export class NgxTouchKeyboardComponent {
    */
   @HostListener('window:selectionchange', ['$event'])
   handleSelectionChange(event: Event): void {
-    console.log("event in selectionchange", event);
     this._caretEventHandler(event);
   }
 
@@ -306,7 +300,6 @@ export class NgxTouchKeyboardComponent {
     else {
       output = this._addStringAt(output, button, ...commonParams);
     }
-
     if (this._activeInputElement) {
       this._activeInputElement.value = output;
 
@@ -384,7 +377,6 @@ export class NgxTouchKeyboardComponent {
    * @param event The button event.
    */
   handleButtonUp(button: string, e?: Event): void {
-    console.log("key and event in handleButtonUp", button, e);
     if (this.debug) {
       console.log('Key up:', button);
     }
@@ -405,6 +397,7 @@ export class NgxTouchKeyboardComponent {
     this._isMouseHold = false;
     if (this._holdInteractionTimeout)
       clearTimeout(this._holdInteractionTimeout);
+
   }
 
   /**
