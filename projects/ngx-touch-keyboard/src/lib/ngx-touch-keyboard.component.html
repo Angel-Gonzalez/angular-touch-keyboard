@@ -16,10 +16,9 @@
           [dir]="locale.dir"
           class="touch-keyboard-key"
           [ngClass]="[getButtonClass(key)]"
-          [attr.data-layout]="layoutMode"
-          (pointerup)="handleButtonUp(key, $event)"
-          (pointerdown)="handleButtonDown(key, $event)"
-          (pointercancel)="handleButtonUp(key, $event)"
+          [attr.data-layout]="layoutMode"   
+          (mouseup)="handleButtonUp(key, $event)"
+          (mousedown)="handleButtonDown(key, $event)"
           [innerHtml]="getButtonDisplayName(key)"
         ></button>
       </ng-container>

@@ -58,6 +58,8 @@ export class NgxTouchKeyboardComponent {
     return this._activeInputElement?.maxLength ?? -1;
   }
 
+  
+
   /**
    * Getter for type of input
    */
@@ -69,6 +71,7 @@ export class NgxTouchKeyboardComponent {
   // @ Decorated methods
   // -----------------------------------------------------------------------------------------------------
 
+
   /**
    * On keyup
    */
@@ -79,6 +82,8 @@ export class NgxTouchKeyboardComponent {
       this._handleHighlightKeyUp(event);
     }
   }
+
+ 
 
   /**
    * On keydown
@@ -295,7 +300,6 @@ export class NgxTouchKeyboardComponent {
     else {
       output = this._addStringAt(output, button, ...commonParams);
     }
-
     if (this._activeInputElement) {
       this._activeInputElement.value = output;
 
@@ -393,6 +397,7 @@ export class NgxTouchKeyboardComponent {
     this._isMouseHold = false;
     if (this._holdInteractionTimeout)
       clearTimeout(this._holdInteractionTimeout);
+
   }
 
   /**
