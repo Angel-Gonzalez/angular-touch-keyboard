@@ -5,16 +5,17 @@
 ## What is this?
 
 Virtual Keyboard for Angular applications.
+Forked from [ngx-touch-keyboard](https://www.npmjs.com/package/ngx-touch-keyboard) and added some features to work in webkit and spanish layouts.
 
 ![angular touch keyboard](https://mohsen77sk.github.io/angular-touch-keyboard/assets/images/angularTouchKeyboard.png)
 
 ## Install
 
-### Step 1: Install [ngx-touch-keyboard](https://www.npmjs.com/package/ngx-touch-keyboard)
+### Step 1: Install [@angel-gonzalez/ngx-touch-keyboard](https://www.npmjs.com/package/@angel-gonzalez/ngx-touch-keyboard)
 
 
 ```sh
-npm install @angular/cdk ngx-touch-keyboard
+npm install @angular/cdk @angel-gonzalez/ngx-touch-keyboard
 ```
 
 ### Step 2: Import the module
@@ -36,7 +37,7 @@ export class AppModule { }
 
 ### Compatibility
 
-#### Version [`4.0.0`]
+#### Version [`4.0.12`]
 
 * `@angular/core`: `^18.0.0`
 * `@angular/cdk`: `^18.0.0`
