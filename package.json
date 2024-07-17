@@ -1,6 +1,6 @@
 {
   "name": "angular-touch-keyboard",
-  "version": "4.0.10",
+  "version": "4.0.12",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +10,7 @@
     "build-demo": "npm run build-lib && ng build --base-href /angular-touch-keyboard/"
   },
   "license": "MIT",
-  "private": true,
+  "private": false,
   "files": [
     "dist"
   ],
@@ -44,8 +44,5 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "ng-packagr": "^18.1.0",
     "typescript": "~5.4.5"
-  },
-  "publishConfig": {
-    "@control-presencial:registry": "https://git.nscontrol.es/api/v4/projects/189/packages/npm/"
   }
 }

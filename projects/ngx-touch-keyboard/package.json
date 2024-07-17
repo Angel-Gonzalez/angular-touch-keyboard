@@ -1,7 +1,7 @@
 {
-  "name": "@control-presencial/ngx-touch-keyboard",
-  "version": "4.0.10",
-  "description": "Virtual Keyboard for Angular applications",
+  "name": "@angel-gonzalez/ngx-touch-keyboard",
+  "version": "4.0.12",
+  "description": "Teclado en pantalla para  Angular Material 18",
   "scripts": {
   },
   "peerDependencies": {
@@ -9,32 +9,23 @@
     "@angular/common": "^18.1.0",
     "@angular/core": ">=18.0.0"
   },
+  "private": false,
   "dependencies": {
     "tslib": "^2.6.3"
   },
-  "private": false,
-  "keywords": [
-    "Angular",
-    "Material",
-    "Touch",
-    "Virtual",
-    "Keyboard",
-    "onscreen"
-  ],
-  "author": {
-    "name": "Ángel González",
-    "url": "https://git.nscontrol.es/angel"
-  },
-  "homepage": "https://git.nscontrol.es/control-presencial/fichanet/touch-screen-keyboard/-/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://git.nscontrol.es/control-presencial/fichanet/touch-screen-keyboard.git"
+    "url": "git+https://github.com/Angel-Gonzalez/angular-touch-keyboard.git"
   },
-  "bugs": {
-    "url": "https://git.nscontrol.es/control-presencial/fichanet/touch-screen-keyboard/-/issues"
-  },
+  "keywords": [
+    "touchkeyboard",
+    "angular",
+    "material"
+  ],
+  "author": "Angel Gonzalez",
   "license": "MIT",
-  "publishConfig": {
-    "@control-presencial:registry": "https://git.nscontrol.es/api/v4/projects/189/packages/npm/"
-  }
+  "bugs": {
+    "url": "https://github.com/Angel-Gonzalez/angular-touch-keyboard/issues"
+  },
+  "homepage": "https://github.com/Angel-Gonzalez/angular-touch-keyboard#readme"
 }
